@@ -1,0 +1,17 @@
+
+.navigation {
+    /* padding: 1rem; */
+    font-size: 1.1rem;
+    border-bottom: 1px solid #FFFFFF;
+    & > span {
+        color: #cbcbcb;
+        margin: 10px;
+        padding: 8px;
+        border-radius: 5px;
+    }
+}
+
+.active {
+    background-color: #111827;
+    color: #FFFFFF !important;
+}
