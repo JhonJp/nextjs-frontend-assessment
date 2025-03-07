@@ -15,9 +15,11 @@ export default function Header(props: { navigations: Nav[] }) {
                 <img src='/vercel.svg' className={`h-4 w-auto mr-6`} alt=''/>
                 
                 {(navigations || []).map((item, _index)=>
-                    <span className={`${item.isActive ? styles.active : ""}`}>
-                        {item.name}
-                    </span> 
+                    <a href={item.url} className={`pointer`}>
+                        <span className={`${item.isActive ? styles.active : ""}`}>
+                            {item.name}
+                        </span> 
+                    </a>
                 )}
             </div>
         </nav>

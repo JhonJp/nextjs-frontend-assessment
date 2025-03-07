@@ -10,11 +10,11 @@ export default function DashboardList(props: { data: ProductInterface[] }) {
     const navigations = [
         {
             name: "Dashboard",
-            url: "#",
+            url: "/dashboard/list",
             isActive: true
         },{
             name: "Browse",
-            url: "#",
+            url: "/dashboard/card",
             isActive: false
         },{
             name: "Cart",
