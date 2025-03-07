@@ -14,7 +14,7 @@ export default function DashboardType({ params }: { params: { type: string } }){
 
     return(
         <>
-            {type?.toLowerCase() === "list" ? <DashboardList data={data ?? []} /> : <DashboardCard products={data ?? []} />}
+            {type?.toLowerCase() === "card" ? <DashboardCard products={data ?? []} /> : <DashboardList data={data ?? []} /> }
         </>
     )
 }
